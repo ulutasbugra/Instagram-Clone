@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>İnstagram Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+       .headerr {
+        height: 54px;
+       }
+       .insticon {
+        margin-left: 192px;
+       }
+       .img-roundedb {
+        border-radius: 50%;
+       }
+       .img-rounded {
+        border-radius: 50%;
+        border: rgb(212, 50, 50) 3px solid;
+        cursor: pointer;
+       }
+       .follow-btn {
+        margin-left:45px;
+       }
+    </style>
+    </head>
+  <body>
+    <!--Main Navigation-->
+<header style="z-index: 1;" class="mb-5 headerr  position-sticky top-0 ">
+    <!-- Jumbotron -->
+    <div class="p-3 text-center text-white" style="background-color: #fff">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-center align-items-center justify-content-md-start mb-3 mb-md-0">
+             <img class="insticon" height="40px" src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="">
+                
+          </div>
+  
+          <div class="col-md-4 d-flex justify-content-center align-items-center srch">
+            <form class="d-flex align-items-center input-group w-auto my-auto mb-3 mb-md-0">
+              <input autocomplete="off" type="search" class=" fontAvesome form-control rounded" placeholder="Ara" />
+            
+            </form>
+          </div>
+  
+          <div class=" col-md-3 d-flex justify-content-center justify-content-md-end align-items-center">
+            <div class="me-5 d-flex">
+              <!-- Cart -->
+              <a  class="text-reset me-3" href="#">
+                <i style="color: black;" class="fa-xl fa-solid fa-house "></i>
+              </a>
+  
+              <!-- Notification -->
+              <div class="dropdown">
+                <a class="text-reset me-3" href="#" >
+                  <i style="color: black;" class="fa-brands fa-facebook-messenger fa-xl"></i>
+                </a>
+               
+              </div>
+  
+              <!-- Languages -->
+              <div class="dropdown">
+                <a class="text-reset dropdown-toggle  hidden-arrow" href="#" id="navbarDropdown" role="button"
+                  data-mdb-toggle="dropdown" aria-expanded="false">
+                  <i style="color: black;" class="fa-regular fa-compass fa-xl"></i>
+                </a>
+              </div>
+              <div class="dropdown">
+              <a class="text-reset dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
+              data-mdb-toggle="dropdown" aria-expanded="false">
+              <i style="color: black;" class="fa-regular fa-heart fa-xl"></i>
+                </a>
+                </div>  
+              <!-- User -->
+              <div class="dropdown">
+                <a class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                  id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHAS2Gg6sPqMA/profile-displayphoto-shrink_800_800/0/1662806679981?e=1669248000&v=beta&t=F93Prh1lZuYlotXn-kA2WDPzv-Fd0_yh3K0kthB9Nk0" class="rounded-circle" height="26px" width="26px" alt=""
+                    loading="lazy" />
+                </a>
+              
+                
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  
+   
+  </header>
+  <!--Main Navigation-->
+  
+  <!-- Container -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="offset-1 col-sm-11">
+      <div class="row">
+      <!-- Left Side -->
+
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="d-flex justify-content-between col-sm-12"> <!--Story part start-->
+            <div class="story d-flex flex-column">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg"  class="img-rounded" height="80px" width="80px" alt=""> 
+          </img>
+            <p class="text-center mt-2 fw-bold">elonmusk</p>
+          </div>
+            <div class="story d-flex flex-column">
+            <img src="https://i.pinimg.com/736x/11/66/c7/1166c71459faa2d6509e65ea239aa70f.jpg" class="img-rounded" height="80px" width="80px" alt="">
+            </img>
+            <p class="text-center mt-2 fw-bold">CRonaldo7</p>
+             </div>
+           <div class="story d-fle flex-column">
+            <img src="https://bucket.abilitypool.com/production/images/project/431/6123fcdef36b9.png" class="img-rounded" height="80px" width="80px" alt="">
+              
+            </img>
+            <p class="text-center mt-2 fw-bold" >kodluyoruz</p>
+                </div>
+           <div class="story d-fle flex-column">
+            <img src="https://www.instyle.com.tr/Content/images/Haberler/Orjinal/rihanna-dunyanin-en-zengin-kadin-muzisyeni--78136-6062019123923.jpg" class="img-rounded" height="80px" width="80px" alt="">
+             </img>
+            <p class="text-center mt-2 fw-bold">rihanna</p>
+                </div>
+           <div class="story d-fle flex-column">
+            <img src="https://pbs.twimg.com/profile_images/1564375315526275072/7Xnua7BM_400x400.jpg" class="img-rounded" height="80px" width="80px" alt="">
+              
+            </img>
+            <p class="text-center mt-2 fw-bold">snoopdogg</p>
+                </div>
+           <div class="story d-fle flex-column">
+            <img src="https://img-s3.onedio.com/id-609009fab10d6b3359d77688/rev-0/w-620/f-jpg/s-72b012f1537461dabafc2c249abedad3f0882059.jpg" class="img-rounded" height="80px" width="80px" alt="">
+             
+            </img>
+            <p class="text-center mt-2 fw-bold">ezhel06</p>
+            </div>
+            <div class="story d-fle flex-column">
+              <img src="https://images.bjk.com.tr/images/news/kulubumuzden-aciklama_000022.jpg" class="img-rounded" height="80px" width="80px" alt="">
+               
+              </img>
+              <p class="text-center mt-2  fw-bold">BesiktasJK</p>
+              </div>
+          </div> <!--Story part end-->
+          
+          <div class="col-sm-12 mt-2"> <!-- Post start-->
+            <div class="card">
+              <div class="cardtop d-flex align-items-center ">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHAS2Gg6sPqMA/profile-displayphoto-shrink_800_800/0/1662806679981?e=1669248000&v=beta&t=F93Prh1lZuYlotXn-kA2WDPzv-Fd0_yh3K0kthB9Nk0" class=" ms-2 img-rounded" height="40px" width="40px" alt="">
+                <p class="mt-3 ms-2 fw-bold">bugraulutass</p>
+                <a href="" class="text-dark position-absolute end-0 top-0 me-3  text-decoration-none fs-3">...</a>
+              </div>
+              <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/c1/66/73/azmak-nehri2-largejpg.jpg?w=500&h=400&s=1" class="card-img-top" height="500px" alt="...">
+           
+                <div class="row card-title">
+                  <div class=" col-sm-12  position-relative">
+                    <i class=" mt-4 ms-2 fa-regular fa-heart fa-xl"></i>
+                    <i class="mt-4 ms-2 fa-regular fa-comment fa-xl"></i>
+                    <i class="mt-4 ms-2 fa-regular fa-paper-plane fa-xl"></i>
+                 
+                    <i class=" mt-4 me-4 position-absolute end-0 fa-regular fa-bookmark fa-xl"></i>
+
+                  </div>
+                  <div class="col-sm-12 mb-0">
+                    <p class="fw-bold mt-2 mb-0 ms-2" >542.324 kişi bunu beğendi</p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p class="mb-0"><span class="mt-0  ms-2 fw-bold">bugraulutass</span> Huzur </p>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <a href="#" class="text-decoration-none text-dark fw-light"><p class="ms-2 mb-0">10.453 yorumun tümünü göster</p></a>
+                  </div>
+                  <div class="col-sm-12 ">
+                   <p class="mb-0"><span class="mt-0  ms-2 fw-bold" >snoopdogg</span> Where is this place man? That's awesome!</p>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <p class="mb-0"><span class="mt-0  ms-2 fw-bold" >elonmusk</span> I like your view.I wanna travel Turkey </p>
+                   </div>
+                   <div class="col-sm-12 ">
+                    <p class="mb-0 mt-2 ms-2 fw-light">10 SAAT ÖNCE</p>
+                   </div>
+                   <div class=" row position-relative d-flex align-items-center ">
+                    <div class="col-sm-10">
+                      <input type="text" class="ms-2" style="width: 100%; border: none; height: 50px;" placeholder="Yorum ekle...">
+                    </div>
+                    <div class="col-sm-2 position-absolute end-0 mt-2 text-center" style="color: rgb(65, 65, 214);"><p>Paylaş</p></div> 
+                   </div>
+                  
+
+                </div>
+                
+            
+                
+               
+            
+            </div>
+          </div><!--Post end-->
+
+          <div class="col-sm-12 mt-2"> <!-- Post start-->
+            <div class="card">
+              <div class="cardtop d-flex align-items-center ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg" class=" ms-2 img-rounded" height="40px" width="40px" alt="">
+                <p class="mt-3 ms-2 fw-bold">elonmusk</p>
+                <a href="" class="text-dark position-absolute end-0 top-0 me-3  text-decoration-none fs-3">...</a>
+              </div>
+              <img src="https://www.digitaltalks.org/wp-content/uploads/2020/08/SpaceX-.jpg" class="card-img-top" height="500px" alt="...">
+           
+                <div class="row card-title">
+                  <div class=" col-sm-12  position-relative">
+                    <i class=" mt-4 ms-2 fa-regular fa-heart fa-xl"></i>
+                    <i class="mt-4 ms-2 fa-regular fa-comment fa-xl"></i>
+                    <i class="mt-4 ms-2 fa-regular fa-paper-plane fa-xl"></i>
+                 
+                    <i class=" mt-4 me-4 position-absolute end-0 fa-regular fa-bookmark fa-xl"></i>
+
+                  </div>
+                  <div class="col-sm-12 mb-0">
+                    <p class="fw-bold mt-2 mb-0 ms-2" >1.524.435 kişi bunu beğendi</p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p class="mb-0"><span class="mt-0  ms-2 fw-bold">elonmusk</span> SpaceX  </p>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <a href="#" class="text-decoration-none text-dark fw-light"><p class="ms-2 mb-0">232.432 yorumun tümünü göster</p></a>
+                  </div>
+                  <div class="col-sm-12 ">
+                   <p class="mb-0"><span class="mt-0  ms-2 fw-bold" >rihanna</span> You are amazing!</p>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <p class="mb-0"><span class="mt-0  ms-2 fw-bold" >snoopdogg</span> I love this guy</p>
+                   </div>
+                   <div class="col-sm-12 ">
+                    <p class="mb-0 mt-2 ms-2 fw-light">10 SAAT ÖNCE</p>
+                   </div>
+                   <div class=" row position-relative d-flex align-items-center ">
+                    <div class="col-sm-10">
+                      <input type="text" class="ms-2" style="width: 100%; border: none; height: 50px;" placeholder="Yorum ekle...">
+                    </div>
+                    <div class="col-sm-2 position-absolute end-0 mt-2 text-center" style="color: rgb(65, 65, 214);"><p>Paylaş</p></div> 
+                   </div>
+                  
+
+                </div>
+                
+            
+                
+               
+            
+            </div>
+          </div><!--Post end-->
+
+          <div class="col-sm-12 mt-2"> <!-- Post start-->
+            <div class="card">
+              <div class="cardtop d-flex align-items-center ">
+                <img src="https://img-s3.onedio.com/id-609009fab10d6b3359d77688/rev-0/w-620/f-jpg/s-72b012f1537461dabafc2c249abedad3f0882059.jpg" class=" ms-2 img-rounded" height="40px" width="40px" alt="">
+                <p class="mt-3 ms-2 fw-bold">ezhel06</p>
+                <a href="" class="text-dark position-absolute end-0 top-0 me-3  text-decoration-none fs-3">...</a>
+              </div>
+              <img src="https://i.scdn.co/image/6ae8488498deca2c9feda192d7fcccdfa965b3e2" class="card-img-top" height="500px" alt="...">
+           
+                <div class="row card-title">
+                  <div class=" col-sm-12  position-relative">
+                    <i class=" mt-4 ms-2 fa-regular fa-heart fa-xl"></i>
+                    <i class="mt-4 ms-2 fa-regular fa-comment fa-xl"></i>
+                    <i class="mt-4 ms-2 fa-regular fa-paper-plane fa-xl"></i>
+                 
+                    <i class=" mt-4 me-4 position-absolute end-0 fa-regular fa-bookmark fa-xl"></i>
+
+                  </div>
+                  <div class="col-sm-12 mb-0">
+                    <p class="fw-bold mt-2 mb-0 ms-2" >142.435 kişi bunu beğendi</p>
+                  </div>
+                  <div class="col-sm-12">
+                    <p class="mb-0"><span class="mt-0  ms-2 fw-bold">ezhel06</span> Harika bir konserdi... </p>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <a href="#" class="text-decoration-none text-dark fw-light"><p class="ms-2 mb-0">2.435 yorumun tümünü göster</p></a>
+                  </div>
+                  <div class="col-sm-12 ">
+                   <p class="mb-0"><span class="mt-0  ms-2 fw-bold" >CRonaldo7</span> You are amazing man!</p>
+                  </div>
+                  <div class="col-sm-12 ">
+                    <p class="mb-0"><span class="mt-0  ms-2 fw-bold" >elonmusk</span> I love this guy</p>
+                   </div>
+                   <div class="col-sm-12 ">
+                    <p class="mb-0 mt-2 ms-2 fw-light">10 SAAT ÖNCE</p>
+                   </div>
+                   <div class=" row position-relative d-flex align-items-center ">
+                    <div class="col-sm-10">
+                      <input type="text" class="ms-2" style="width: 100%; border: none; height: 50px;" placeholder="Yorum ekle...">
+                    </div>
+                    <div class="col-sm-2 position-absolute end-0 mt-2 text-center" style="color: rgb(65, 65, 214);"><p>Paylaş</p></div> 
+                   </div>
+                  
+
+                </div>
+                
+            
+                
+               
+            
+            </div>
+          </div><!--Post end-->
+
+          
+
+        </div>
+      </div>
+  <!-- Left Side End -->
+  
+  <!-- Right Side -->
+      <div class=" col-sm-5 mt-4">
+        <div class="d-flex  align-items-center ">
+          <img height="80px" width="80px" class="img-rounded" src="https://media-exp1.licdn.com/dms/image/C4E03AQHAS2Gg6sPqMA/profile-displayphoto-shrink_800_800/0/1662806679981?e=1669248000&v=beta&t=F93Prh1lZuYlotXn-kA2WDPzv-Fd0_yh3K0kthB9Nk0" alt="">
+          <p class="mt-2 ms-2 fw-bold">bugraulutass</p>
+          </div>
+         <div class="mt-4">
+            <p>Senin için önerilenler <span class="ms-4 fw-bold">Tümünü gör</span></p>
+
+          <div class="row">
+            <div class="crdleftside col-sm-4">
+              <div class="d-flex align-items-center">
+                <img class="img-roundedb" width="40px" height="40px" src="https://kablosuzbeyin.com/wp-content/uploads/2021/01/kablosuzbeyin_1000x.png" alt="">
+                <p class=" mt-3 ms-1 fw-bold" >kablosuzbeyin</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="img-roundedb" width="40px" height="40px" src="https://pbs.twimg.com/profile_images/1360317534172569614/sdir3Sab_400x400.jpg" alt="">
+                <p class=" mt-3 ms-1 fw-bold" >patika.dev</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="img-roundedb" width="40px" height="40px" src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202209100141" alt="">
+                <p class=" mt-3 ms-1 fw-bold" >Apple</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="img-roundedb" width="40px" height="40px" src="https://yt3.ggpht.com/R8A_Jl5GE--fyZWI0EaNfdVDxQycfFp0u7ouJfxKcCIgx_SXSVb3IGIiR-GFjzL2RqUNYDDvWg=s900-c-k-c0x00ffffff-no-rj" alt="">
+                <p class=" mt-3 ms-1 fw-bold" >xiaomi</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="img-roundedb" width="40px" height="40px" src="https://play-lh.googleusercontent.com/S9d5wLUTLGsAz4lOxk34U0yRfEpcynza56KQDE31MdNt6SEjLzpOijgPBQPl7aK1xz32" alt="">
+                <p class=" mt-3 ms-1 fw-bold" >natgeo</p>
+              </div>
+    
+    
+    
+
+
+            </div>
+
+            <div class="crdright d-flex flex-column col-sm-3">
+            <p class="mt-3 follow-btn">Takip et</p>
+            <p class="mt-3 follow-btn">Takip et</p>
+            <p class="mt-3 follow-btn">Takip et</p>
+            <p class="mt-3 follow-btn">Takip et</p>
+            <p class="mt-3 follow-btn">Takip et</p>
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Right Side End -->
+      </div>
+    </div>
+  </div>  
+</div>
+  <!-- Container End -->
+
+    <script src="https://kit.fontawesome.com/a656fa4fd4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
